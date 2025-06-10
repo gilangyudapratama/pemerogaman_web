@@ -53,14 +53,18 @@ if(isset($_POST["nama"]) && isset($_POST["umur"])){
                 background-color: greenyellow;
                 padding: 10px;
                 border-radius: 5px;
+<<<<<<< Updated upstream
             }
             #logout {
                 background-color:rgb(236, 80, 80);
                 cursor: pointer;
+=======
+>>>>>>> Stashed changes
             }
         </style>
     </head>
     <body>
+<<<<<<< Updated upstream
         <h1><?php echo "Selamat datang " . $_SESSION['username'] . " Ke-" . $_SESSION["counter"] ?></h1>
         <form action="dashboard.php" method="post">
          <table>
@@ -95,6 +99,28 @@ if(isset($_POST["nama"]) && isset($_POST["umur"])){
                 <td><?php echo $daftar["umur"] ?></td>
             </tr>
             <?php endforeach; ?>
+=======
+        <h1><?php echo "Selamat datang " . $username . " ke-" . $count  ; ?></h1>
+<form action="login.php" method="post">
+         <table>
+            <tr>
+                <td colspan="2" style="text-align: center;" >LOGIN</td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" /> Ingatkan saya</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button type="submit" >SUBMIT</button></td>
+            </tr>
+>>>>>>> Stashed changes
         </table>
         </form>
     </body>
