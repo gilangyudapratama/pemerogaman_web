@@ -149,7 +149,7 @@ if(isset($_GET["index"])){
                         ?>
                     </td>
                     <td>
-                        <a href="hapus.phpindex=<?php echo $index; ?>">hapus</a> <a href="dashboard.php?index=<?php echo $index; ?>">ubah</a>
+                        <a href="hapus.php?index=<?php echo $index; ?>">hapus</a> <a href="dashboard.php?index=<?php echo $index; ?>">ubah</a>
                     </td>
                  </tr>
                  <?php endforeach; ?>
